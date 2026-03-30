@@ -1,10 +1,10 @@
-import os
 import streamlit as st
 import pickle
 import pandas as pd
 import requests
 import numpy as np
 import re
+import os
 
 # --- 1. CONFIG MUST BE FIRST ---
 st.set_page_config(page_title="Movie Matcher Pro", layout="wide", page_icon="🎬")
