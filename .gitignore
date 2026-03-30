@@ -1,0 +1,13 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# Dataset files (Keep your repo clean and deployment fast)
+*.csv
+*.xlsx
+
+# Temporary/IDE files
+.ipynb_checkpoints/
+.vscode/
+.DS_Store
