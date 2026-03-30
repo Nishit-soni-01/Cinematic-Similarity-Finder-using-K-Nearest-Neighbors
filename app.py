@@ -70,11 +70,18 @@ def fetch_poster(movie_title):
 # --- 4. LOAD DATA ---
 @st.cache_resource
 def load_assets():
-    # Ensure these .pkl files are in the same folder as this app.py
-    model = pickle.load(open('movie_model.pkl', 'rb'))
-    movie_pivot = pickle.load(open('movie_pivot.pkl', 'rb'))
+    # Get the directory where app.py is located
+    base_path = os.path.dirname(__file__)
+    
+    # Create absolute paths to the pkl files
+    model_path = os.path.join(base_path, 'movie_model.pkl')
+    pivot_path = os.path.join(base_path, 'movie_pivot.pkl')
+    
+    # Load the files using the absolute paths
+    model = pickle.load(open(model_path, 'rb'))
+    movie_pivot = pickle.load(open(pivot_path, 'rb'))
+    
     return model, movie_pivot
-
 try:
     model, movie_pivot = load_assets()
     movie_list = movie_pivot.index.values
