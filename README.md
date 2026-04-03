@@ -4,9 +4,6 @@ MovieMatch is a full-stack Machine Learning application that suggests movies bas
 
 
 
-## 🚀 Live Demo
-*(Once deployed, insert your Streamlit Cloud link here)*
-
 ## 🧠 Technical Architecture
 The core of this project is built on the **K-Nearest Neighbors (KNN)** algorithm.
 
