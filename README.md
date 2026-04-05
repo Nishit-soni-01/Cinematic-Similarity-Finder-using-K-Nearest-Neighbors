@@ -4,7 +4,7 @@ MovieMatch is a full-stack Machine Learning application that suggests movies bas
 
 
 
-## 🧠 Technical Architecture
+## 🧠 Technical Architecture 
 The core of this project is built on the **K-Nearest Neighbors (KNN)** algorithm.
 
 - **Algorithm:** Unsupervised `NearestNeighbors`.
